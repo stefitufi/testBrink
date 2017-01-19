@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="125dp"
+              android:layout_height="175dp"
+              android:background="@drawable/card_background_white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/google_cards_background_bottom"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <com.test.app.utils.utils_font.RobotoTextView
+            android:id="@+id/app_title_rtv"
+            style="@style/TitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.87"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:singleLine="true"
+            android:transitionName="@string/transition_textview"/>
+
+    </LinearLayout>
+    <!-- App Google Card -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/google_cards_background_top"
+        android:orientation="vertical">
+
+        <com.test.app.utils.shaped_images.ShapeImageView
+            android:id="@+id/app_image_siv"
+            style="@style/ImageViewStyle"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:transitionName="@string/transition_view"
+            app:siShape="@raw/c"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/google_cards_background_bottom"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <com.test.app.utils.utils_font.RobotoTextView
+            android:id="@+id/app_caption_rtv"
+            style="@style/CaptionStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.54"
+            android:maxLines="2"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
